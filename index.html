@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ftuit Burst</title>
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+            rel="stylesheet">
+        <!-- DaisyUI & Tailwind -->
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+            rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .lato{
+                font-family: 'Lato', sans-serif;
+            }
+        </style>
+
+    </head>
+    <body class="lato">
+        <header class="container mx-auto">
+            <div class="px-8 lg:px-40 my-8">
+                <div class="navbar bg-[#F85559] rounded-full">
+                    <div class=" navbar-start">
+                        <div
+                            class="hidden lg:flex pl-5 space-x-4 text-white font-semibold text-lg">
+                            <a> Home</a>
+                            <a>About Us</a>
+                            <a>Shop</a>
+                            <a>All Fruits</a>
+                        </div>
+                    </div>
+                    <div class="navbar-center">
+                        <div class="ml-4  flex">
+                            <img src="images/logo.png" alt>
+                            <h2
+                                class="ml-4 text-2xl mt-2 lg:text-4xl text-white  font-bold">Fruit
+                                Burst</h2>
+                        </div>
+
+                    </div>
+                    <div class="navbar-end">
+                        <div class="dropdown dropdown-bottom dropdown-end">
+                            <div tabindex="0" role="button"
+                                class="btn btn-ghost mr-4 lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5" fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"><path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            </div>
+
+                            <ul tabindex="0"
+                                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About Us</a></li>
+                                <li><a>Shop</a></li>
+                                <li><a>All Fruits</a></li>
+                            </ul>
+                        </div>
+                        <div
+                            class="hidden lg:flex items-center justify-center bg-white px-5 py-2 rounded-full">
+                            <input type="text" placeholder="Search">
+                            <img src="images/search.png" alt>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="px-8 lg:px-40 my-8">
+                <div class="carousel w-full">
+                    <div id="slide1"
+                        class="carousel-item relative w-full
+                        bg-[linear-gradient(180deg,#121212,rgba(18,18,18,0.00)),url('../images/banner1.png')] 
+                        h-[600px] flex items-center justify-center rounded-md">
+                        <div
+                            class="text-white space-y-4 text-center">
+                            <h1 class="text-5xl font-extrabold">Exotic
+                                tastes at your <br>
+                                doorstep</h1>
+                            <p class="mx-auto w-2/3">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nostrum provident minus sunt
+                                animi placeat, tempore perferendis delectus
+                                dolore repudiandae voluptatibus aliquam, veniam
+                                atque iste quas necessitatibus quod dolorem
+                                fugit accusantium!
+                            </p>
+                            <button
+                                class="btn bg-[#F85559] border-none text-white">Shop
+                                Now</button>
+                        </div>
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2"
+                        class="carousel-item relative w-full
+                        bg-[linear-gradient(180deg,#121212,rgba(18,18,18,0.00)),url('../images/banner2.png')] 
+                        h-[600px] flex items-center justify-center rounded-md">
+                        <div
+                            class="text-white space-y-4 text-center">
+                            <h1 class="text-5xl font-extrabold">Exotic
+                                tastes at your <br>
+                                doorstep</h1>
+                            <p class="mx-auto w-2/3">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nostrum provident minus sunt
+                                animi placeat, tempore perferendis delectus
+                                dolore repudiandae voluptatibus aliquam, veniam
+                                atque iste quas necessitatibus quod dolorem
+                                fugit accusantium!
+                            </p>
+                            <button
+                                class="btn bg-[#F85559] border-none text-white">Shop
+                                Now</button>
+                        </div>
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3"
+                        class="carousel-item relative w-full
+                        bg-[linear-gradient(180deg,#121212,rgba(18,18,18,0.00)),url('../images/banner3.png')] 
+                        h-[600px] flex items-center justify-center rounded-md">
+                        <div
+                            class="text-white space-y-4 text-center">
+                            <h1 class="text-5xl font-extrabold">Exotic
+                                tastes at your <br>
+                                doorstep</h1>
+                            <p class="mx-auto w-2/3">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nostrum provident minus sunt
+                                animi placeat, tempore perferendis delectus
+                                dolore repudiandae voluptatibus aliquam, veniam
+                                atque iste quas necessitatibus quod dolorem
+                                fugit accusantium!
+                            </p>
+                            <button
+                                class="btn bg-[#F85559] border-none text-white">Shop
+                                Now</button>
+                        </div>
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4"
+                        class="carousel-item relative w-full
+                        bg-[linear-gradient(180deg,#121212,rgba(18,18,18,0.00)),url('../images/banner4.png')] 
+                        h-[600px] flex items-center justify-center rounded-md">
+                        <div
+                            class="text-white space-y-4 text-center">
+                            <h1 class="text-5xl font-extrabold">Exotic
+                                tastes at your <br>
+                                doorstep</h1>
+                            <p class="mx-auto w-2/3">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nostrum provident minus sunt
+                                animi placeat, tempore perferendis delectus
+                                dolore repudiandae voluptatibus aliquam, veniam
+                                atque iste quas necessitatibus quod dolorem
+                                fugit accusantium!
+                            </p>
+                            <button
+                                class="btn bg-[#F85559] border-none text-white">Shop
+                                Now</button>
+                        </div>
+                        <div
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="hidden lg:flex justify-evenly items-center text-center mx-auto h-[200px] w-[150vh] bg-white -translate-y-1/2 rounded-lg shadow-lg">
+                    <div>
+                        <img src="images/fruit1.png" alt>
+                        <p>Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit2.png" alt>
+                        <p>Orange</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit3.png" alt>
+                        <p>Mango</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit4.png" alt>
+                        <p>Strawberry</p>
+                    </div>
+                    <div>
+                        <img src="images/fruit5.png" alt>
+                        <p>Mango</p>
+                    </div>
+                </div>
+            </section>
+
+        </header>
+    </body>
+</html>
